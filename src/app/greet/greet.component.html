@@ -1,1 +1,6 @@
-<p>greet works!</p>
+<div>
+  Enter Your Name: <input type="text" value={{name}} /> <br />
+  <!-- <input type="text" (input)="name=$event.target.value"><br />
+  {{name}} -->
+  <button (click)="greet($event)">Greet Me!</button>
+</div>

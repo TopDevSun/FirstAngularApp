@@ -12,4 +12,11 @@ export class GreetComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  name: string = "Steve";
+
+  greet($event:any): void {
+    console.log($event);
+    alert($event.target.innerHTML); // returns Show
+  };
+
 }
